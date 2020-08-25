@@ -1,8 +1,7 @@
 /**
-* Template Name: Valera - v2.1.0
-* Template URL: https://bootstrapmade.com/valera-free-bootstrap-theme/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
+* Template Name: Fly over Canada
+* use : bootstrap
+* Author: Raha Kheirinia
 */
 
 /*--------------------------------------------------------------
@@ -413,7 +412,7 @@ h1, h2, h3, h4, h5, h6 {
 #header-a {
   width: 100%;
   height: 100vh;
-  background: url("../img/20191229_221007.jpg") top center;
+  background: url("../img/Ali-bg.jpg") top center;
   background-size: cover;
   position: relative;
   margin-bottom: -72px;
@@ -725,7 +724,7 @@ margin-left: 15px;
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: linear-gradient(rgba(0, 142, 99, 0.1), rgba(0, 0, 0, 0.1)), url(../img/cta.jpg) fixed center center;
+  background: linear-gradient(rgba(0, 142, 99, 0.1), rgba(0, 0, 0, 0.1)), url(../img/Ali-bg2.jpg) fixed center center;
   background-size: cover;
   padding: 70px 0;
 }
