@@ -1,8 +1,7 @@
 /**
-* Template Name: Valera - v2.1.0
-* Template URL: https://bootstrapmade.com/valera-free-bootstrap-theme/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
+* Template Name: Fly Over Canada
+* Template URL: https://bootstrap.com/
+* Author: Raha Kheirina
 */
 !(function($) {
   "use strict";
