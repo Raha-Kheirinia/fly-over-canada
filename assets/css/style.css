@@ -222,7 +222,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
   text-transform: none;
   color: #150517;
-}
+} 
 
 .nav-menu .drop-down ul a:hover, .nav-menu .drop-down ul .active > a, .nav-menu .drop-down ul li:hover > a {
   color: #48aef3;
@@ -293,11 +293,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-@media (min-width: 468px) {
-  .header-social-links {
-    padding: 0 40px 0 0;
-  }
-}
 
 /* Mobile Navigation */
 .mobile-nav-toggle {
@@ -579,13 +574,13 @@ section {
   margin-bottom: 0;
 }
 
-.about .content .btn-learn-more {
+.btn-learn-more {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
   font-size: 14px;
-  letter-spacing: 1px;
+  letter-spacing: .5px;
   display: inline-block;
-  padding: 12px 32px;
+  padding: 12px 15px;
   border-radius: 5px;
   transition: 0.3s;
   line-height: 1;
@@ -594,9 +589,10 @@ section {
   animation-delay: 0.8s;
   margin-top: 6px;
   border: 2px solid #48aef3;
+  
 }
 
-.about .content .btn-learn-more:hover {
+.btn-learn-more:hover {
   background: #48aef3;
   color: #fff;
   text-decoration: none;
@@ -635,69 +631,14 @@ margin-left: 15px;
   font-size: 20px;
   color: #48aef3;
   line-height: 1;
-}
-/*--------------------------------------------------------------
-# Our Values
---------------------------------------------------------------*/
-.our-values .card {
-  border: 0;
-  padding: 160px 20px 20px 20px;
-  position: relative;
-  width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
 
-.our-values .card-body {
-  z-index: 10;
-  background: rgba(255, 255, 255, 0.9);
-  padding: 15px 30px;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  transition: 0.3s;
-  transition: ease-in-out 0.4s;
-  border-radius: 5px;
-}
-
-.our-values .card-title {
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 15px;
-}
-
-.our-values .card-title a {
-  color: #150517;
-}
-
-.our-values .card-text {
-  color: #5e5e5e;
-}
-
-.our-values .read-more a {
-  color: #777777;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 12px;
-  transition: 0.4s;
-}
-
-.our-values .read-more a:hover {
-  text-decoration: underline;
-}
-
-.our-values .card:hover .card-body {
-  background: #48aef3;
-}
-
-.our-values .card:hover .read-more a, .our-values .card:hover .card-title, .our-values .card:hover .card-title a, .our-values .card:hover .card-text {
-  color: #fff;
 }
 
 
 /*--------------------------------------------------------------
-# Services
+# rules
 --------------------------------------------------------------*/
-.services .icon-box {
+.rules .icon-box {
   padding: 30px;
   position: relative;
   overflow: hidden;
@@ -708,52 +649,75 @@ margin-left: 15px;
   height: 100%;
 }
 
-.services .icon-box:hover {
+.rules .icon-box:hover {
   transform: translateY(-5px);
 }
 
-.services .icon {
+.rules .icon {
   position: absolute;
   left: -20px;
   top: calc(50% - 30px);
 }
 
-.services .icon i {
+.rules .icon i {
   font-size: 64px;
   line-height: 1;
   transition: 0.5s;
 }
 
-.services .title {
+.rules .title {
   margin-left: 40px;
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;
 }
 
-.services .title a {
+.rules .title a {
   color: #111;
 }
 
-.services .icon-box:hover .title a {
+.rules .icon-box:hover .title a {
   color: #48aef3;
 }
 
-.services .description {
+.rules .description {
   font-size: 14px;
   margin-left: 40px;
   line-height: 24px;
   margin-bottom: 0;
 }
 
+.btn-learn-more-rules {
+  padding: 10px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+  transition: all 0.3s ease-in-out;
+  height: 100%;
+}
+.btn-learn-more-rules:hover {
+  transform: translateY(-5px);
+}
 
 /*--------------------------------------------------------------
 # Cta
---------------------------------------------------------------*/
+
 .cta {
   background: linear-gradient(rgba(0, 142, 99, 0.1), rgba(0, 0, 0, 0.1)), url(../img/cta1.jpg) fixed center center;
   background-size: cover;
-  padding: 70px 0;
+  padding: 60px 0;
+}
+--------------------------------------------------------------*/
+
+
+
+.cta {
+  background: url("../img/cta1.jpg") center top no-repeat fixed;
+  background-size: cover;
+  padding: 60px 0 40px 0;
+  position: relative;
 }
 
 .cta h3 {
@@ -768,7 +732,7 @@ margin-left: 15px;
 
 .cta .cta-btn {
   font-family: "Raleway", sans-serif;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 14px;
   letter-spacing: 1px;
   display: inline-block;
@@ -777,7 +741,9 @@ margin-left: 15px;
   transition: 0.5s;
   margin-top: 10px;
   border: 2px solid #fff;
-  color: #fff;
+  color: rgb(255, 255, 255);
+  background: rgba(255, 255, 255, 0.404);
+
 }
 
 .cta .cta-btn:hover {
@@ -870,9 +836,31 @@ margin-left: 15px;
 }
 
 /*--------------------------------------------------------------
-# Team
+# trip
 --------------------------------------------------------------*/
-.team .member {
+#trip {
+  background: url("../img/about-bg.jpg") center top no-repeat fixed;
+  background-size: cover;
+  padding: 60px 0 40px 0;
+  position: relative;
+}
+#trip::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.92);
+  z-index: 9;
+}
+#trip .container {
+  position: relative;
+  z-index: 10;
+}
+/*-------about-bg img ----------*/
+
+.trip .trip-display {
   margin-bottom: 20px;
   overflow: hidden;
   border-radius: 4px;
@@ -880,12 +868,13 @@ margin-left: 15px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
 }
 
-.team .member .member-img {
+.trip .trip-display .trip-img {
   position: relative;
+  height: 70%;
   overflow: hidden;
 }
 
-.team .member .social {
+.trip .trip-display .social {
   position: absolute;
   left: 0;
   bottom: 30px;
@@ -895,54 +884,45 @@ margin-left: 15px;
   text-align: center;
 }
 
-.team .member .social a {
+.trip .trip-display .social a {
   transition: color 0.3s;
   color: #150517;
   margin: 0 3px;
   padding-top: 7px;
   border-radius: 4px;
-  width: 36px;
+  width: 180px;
   height: 36px;
-  background: rgba(255, 127, 93, 0.8);
+  background: rgba(46, 152, 214, 0.8);
   display: inline-block;
   transition: ease-in-out 0.3s;
   color: #fff;
+  font-size: 13px;
+  font-weight: 300;
+  font-family: sans-serif;
 }
 
-.team .member .social a:hover {
-  background: #ff7f5d;
+
+
+.trip .trip-display .social a:hover {
+  background: #5db6ff;
 }
 
-.team .member .social i {
+.trip .trip-display .social i {
   font-size: 18px;
 }
 
-.team .member .member-info {
-  padding: 25px 15px;
+.trip .trip-display .trip-info {
+  padding-left: 15px;
 }
 
-.team .member .member-info h4 {
-  font-weight: 700;
-  margin-bottom: 5px;
-  font-size: 18px;
-  color: #150517;
-}
-
-.team .member .member-info span {
+.trip .trip-display span {
   display: block;
   font-size: 13px;
   font-weight: 400;
   color: #aaaaaa;
 }
 
-.team .member .member-info p {
-  font-style: italic;
-  font-size: 14px;
-  line-height: 26px;
-  color: #777777;
-}
-
-.team .member:hover .social {
+.trip .trip-display:hover .social {
   opacity: 1;
   bottom: 15px;
 }
